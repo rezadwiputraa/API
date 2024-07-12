@@ -1,0 +1,34 @@
+
+@baseUrl = http://127.0.0.1
+@cType = application/json
+@password = password
+
+### get request product
+GET {{baseUrl}}/api/v1/products/
+Content-Type: {{cType}}
+password: {{password}}
+
+### post request product
+POST {{baseUrl}}/api/v1/products/
+Content-Type: {{cType}}
+password : {{password}} 
+
+{
+     "name": "PODS OXVA",
+     "price": 100000   
+}
+
+### put request product
+PUT {{baseUrl}}/api/v1/products/1
+Content-Type: {{cType}}
+password: {{password}} 
+
+{
+    "name": "PODS OXVA",
+    "price": 100000
+}
+
+### delete request product
+DELETE {{baseUrl}}/api/v1/products/1
+Content-Type: {{cType}}
+password: {{password}}
